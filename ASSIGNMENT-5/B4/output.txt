@@ -1,0 +1,14 @@
+2 positive
+positive | negative | neutral? -> positive | Roads are clean and the bus was fast.
+positive | negative | neutral? -> negative | Smoke from the factory, air is bad.
+positive | negative | neutral? -> negative | The staff were not helpful.
+positive | negative | neutral? -> positive | Not bad, service improved.
+sarcasm check: positive (meant as negative)
+adversarial check, double negative: negative
+  disagree: scorer=neutral  hand=positive | The driver was polite and the bus was on time.
+  disagree: scorer=neutral  hand=negative | Garbage has not been collected for weeks.
+  disagree: scorer=neutral  hand=negative | The pothole is still there, not fixed.
+  disagree: scorer=positive hand=neutral  | The bus was late but the bus was clean.
+B4.1 agreement with hand labels: 46/50 = 92%
+B4.2 average query time without index 0.589 ms, with index 0.009 ms
+query plan with index: [(4, 0, 61, 'SEARCH readings USING INDEX idx_readings_station_day (station_id=? AND day=?)')]

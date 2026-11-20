@@ -1,0 +1,20 @@
+B3.1 correctness: loops==pandas True | loops==SQL True | groups: 3
+stations       rows   loops s  pandas s     SQL s
+       1       8760      0.02      0.01      0.02
+      12     105120      0.18      0.13      0.26
+     120    1051200      1.95      1.19      2.81
+         841967 function calls in 0.447 seconds
+
+   Ordered by: internal time
+   List reduced from 43 to 6 due to restriction <6>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   105121    0.167    0.000    0.279    0.000 /usr/local/lib/python3.13/csv.py:174(__next__)
+        1    0.101    0.101    0.447    0.447 /home/claude/CSA08-1911260015-Assignment5/B3/loops_vs_libraries.py:15(plain_loops)
+   105122    0.057    0.000    0.058    0.000 {built-in method builtins.next}
+   105120    0.052    0.000    0.067    0.000 /home/claude/CSA08-1911260015-Assignment5/shared/cleaning_rules.py:3(parse_pm25)
+   210241    0.030    0.000    0.030    0.000 /usr/local/lib/python3.13/csv.py:160(fieldnames)
+   210242    0.024    0.000    0.024    0.000 {built-in method builtins.len}
+
+
+

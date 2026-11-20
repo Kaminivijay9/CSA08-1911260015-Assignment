@@ -1,0 +1,6 @@
+[('Adyar', '2026-10-01', 48.0), ('Guindy', '2026-10-01', 95.0), ('Guindy', '2026-10-03', 121.0)]
+[0.0, 0.644, 1.0]
+self-test passed: impossible value 1500 is dropped
+Q1 average Adyar PM2.5, October: 48.0
+Q2 valid readings per station: [('Adyar', 1), ('Guindy', 2)]
+Q3 highest reading: ('Guindy', '2026-10-03', 121.0)

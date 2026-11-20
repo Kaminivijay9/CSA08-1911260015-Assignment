@@ -1,0 +1,8 @@
+valid values in first 24 hours (station 1): 24 of 24
+min-max first 5: [0.379, 0.158, 0.187, 0.227, 0.152]
+z-score first 5: [-0.226, -1.167, -1.047, -0.874, -1.193]
+mean after fill-forward: 55.017
+mean after fill-median: 55.017
+drop: 101296 values kept in 0.0019s (O(n))
+fill-forward: 105120 values in 0.0028s (O(n), one pass)
+fill-median: 105120 values in 0.0182s (O(n log n) because of the sort)

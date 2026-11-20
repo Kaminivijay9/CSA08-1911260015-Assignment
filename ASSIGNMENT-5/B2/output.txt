@@ -1,0 +1,9 @@
+54.0 108.0
+None
+T'Nagar (placeholder): 70.0
+concatenated query failed: near "Nagar": syntax error
+missing_column.csv: rejected with KeyError: 'pm25'
+wrong_delimiter.csv: rejected with KeyError: 'pm25'
+utf16_encoding.csv: rejected with UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+empty.csv: read 0 rows, total 0
+empty.csv: accepted silently with 0 rows (needs an explicit check)
